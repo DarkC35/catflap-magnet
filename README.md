@@ -1,9 +1,9 @@
 # Catflap Magnet
 
-Small python application that sends "OPEN" or "CLOSED" state of a magnet sensor to an openHAB Contact Item according to the settings in `.env`.
+Small Raspberry Pi python application that sends "OPEN" or "CLOSED" state of a magnet sensor to an openHAB Contact Item according to the settings in `.env`.
 
 Please be aware that in my setup the magnet sensor has *no* contact in the default position and is OPEN/"active" when the flap swings so that there is a short contact at the sensor.
-Therefore you may be have to switch the state values in the `.env` file according to your setup.
+Therefore you maybe have to switch the state values in the `.env` file according to your setup.
 
 ## Setup
 
