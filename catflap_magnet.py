@@ -27,8 +27,9 @@ def get_value_from_env(key):
 def send_command(state):
     openhab_thing_url = get_value_from_env("OPENHAB_THING_STATE_URL")
     data = state
+    headers = {'Content-type': 'text/plain'}
     try:
-        response = requests.put(openhab_thing_url, data=data)
+        response = requests.put(openhab_thing_url, data=data, headers=headers)
         logging.debug(f"send command with state '{state}'")
     except:
         logging.warning("request failed")
