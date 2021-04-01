@@ -1,0 +1,11 @@
+[Unit]
+Description=Autostart manager for CatflapMagnet
+After=network.target
+
+[Service]
+WorkingDirectory=/home/pi/catflap-magnet
+ExecStart=sudo python3 catflap_magnet.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
